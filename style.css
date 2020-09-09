@@ -1,0 +1,157 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-image: linear-gradient(rgb(33, 55, 150), rgb(101, 127, 243));
+    /* background: url(https://www.scdn.co/i/home/lieVariants/bursts-mobile.svg) no-repeat; */
+    /* background-size: 150%; */
+}
+.main{
+
+}
+.header{
+    
+    margin:0;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 0 102px 0 102px;
+    height: 80px;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+}
+.header__logo, .footer__logo{
+    width: 126px;
+    height: 41px;
+}
+.header__logo--svg{
+    margin: 20px 0 30px 0;
+}
+.spotify_logo{
+    fill: white;
+}
+.header__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0 30px 0;
+
+}
+.header__item{
+    padding: 0 15px 0px 15px;
+}
+.header__item:nth-child(3){
+    border-right: solid 1.5px white;
+    padding-right: 30px;
+}
+.header__item:nth-child(4){
+    padding-left: 30px;
+}
+.header__item--link{
+    color: white;
+    text-decoration: none;
+}
+.header__item--link:hover,
+.footer__item--link:hover,
+.bottom-footer__item--link:hover{
+    color: rgb(30,215,96);
+}
+
+/* Body content */
+.thebody{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 180px;
+}
+.thebody__bigcontent{
+    font-size: 150px;
+    text-align: center;
+    color: rgb(30,215,96);
+    letter-spacing: -0.05em;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.thebody__pcontent{
+    text-align: center;
+    color: rgb(30,215,96);
+    font-weight: 550;
+}
+.thebody__downloadcontent{
+    
+    width: 280px;
+    text-decoration: none;
+    margin: 0px auto;
+    text-align: center;
+    padding: 15px 15px;
+    border-radius: 500px;
+    background-color: rgb(30,215,96);
+    color: rgb(33, 55, 150);
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 30px;
+}
+.thebody__downloadcontent:hover{
+    background-color: white;
+}
+
+
+/* Footer Part */
+
+.footer{
+    padding-top: 59px;
+    color: white;
+    height: 505px;
+    background-color: black;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.footer-top{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer__list{
+    font-size: 14px;
+    margin-top: 35px;
+    list-style: none;
+}
+.footer__item{
+    padding: 3px 0 15px;
+}
+.footer__item:nth-child(1){
+    color: rgb(145,148,150);
+}
+.footer__item--link{
+    text-decoration: none;
+    color: white;
+}
+
+.footer__linkicon--link{
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+}
+.footer__linkicon--link:hover{
+    color: rgb(30,215,96);
+}
+
+.bottom-footer__list{
+    margin-left: 43px;
+    list-style: none;
+    display: flex;
+}
+.bottom-footer__item--link{
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(145,148,150);
+    font-size: 12px;
+}
+
