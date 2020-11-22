@@ -1,3 +1,8 @@
+:root{
+    --theme-color: #1ED760;
+}
+
+
 *{
     font-family: 'Work Sans', sans-serif;
     box-sizing: border-box;
@@ -8,8 +13,17 @@ body{
     /* background: url(https://www.scdn.co/i/home/lieVariants/bursts-mobile.svg) no-repeat; */
     /* background-size: 150%; */
 }
-.main{
-
+a {
+    text-decoration: none!important;
+}
+li {
+    list-style: none!important;
+}
+span{
+    padding: 0!important;
+}
+.img-flag{
+    width: 24px;
 }
 .header{
     
@@ -24,12 +38,9 @@ body{
     position: fixed;
     top: 0px;
 }
-.header__logo, .footer__logo{
-    width: 126px;
-    height: 41px;
-}
+
 .header__logo--svg{
-    margin: 20px 0 30px 0;
+    width: 100px;
 }
 .spotify_logo{
     fill: white;
@@ -55,7 +66,6 @@ body{
 }
 .header__item--link{
     color: white;
-    text-decoration: none;
 }
 .header__item--link:hover,
 .footer__item--link:hover,
@@ -69,9 +79,11 @@ body{
     display: flex;
     flex-direction: column;
     padding-bottom: 180px;
+    justify-content: left;
 }
 .thebody__bigcontent{
-    font-size: 150px;
+    font-size: 47px;
+    font-weight: 600;
     text-align: center;
     color: rgb(30,215,96);
     letter-spacing: -0.05em;
@@ -82,45 +94,46 @@ body{
 .thebody__pcontent{
     text-align: center;
     color: rgb(30,215,96);
-    font-weight: 550;
+    font-weight: 500;
 }
 .thebody__downloadcontent{
-    
-    width: 280px;
-    text-decoration: none;
+    width: 260px;
     margin: 0px auto;
     text-align: center;
-    padding: 15px 15px;
+    padding: 12px 12px;
     border-radius: 500px;
     background-color: rgb(30,215,96);
     color: rgb(33, 55, 150);
-    font-weight: 550;
-    font-size: 20px;
-    line-height: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
 }
 .thebody__downloadcontent:hover{
     background-color: white;
+    transform: scale(1.1);
 }
 
 
 /* Footer Part */
-
+.logo-bottom{
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
 .footer{
     padding-top: 59px;
     color: white;
-    height: 505px;
     background-color: black;
-    padding-left: 120px;
-    padding-right: 120px;
+    /* padding-left: 120px;
+    padding-right: 120px; */
 }
 .footer-top{
-
+    padding-top: 50px;
     display: flex;
     justify-content: space-evenly;
+    margin: auto auto 10px auto;
 }
 .footer__list{
     font-size: 14px;
-    margin-top: 35px;
     list-style: none;
 }
 .footer__item{
@@ -130,28 +143,111 @@ body{
     color: rgb(145,148,150);
 }
 .footer__item--link{
-    text-decoration: none;
     color: white;
 }
 
 .footer__linkicon--link{
-    font-size: 50px;
+    font-size: 43px;
     color: white;
-    padding: 10px;
+    padding: 5px;
 }
 .footer__linkicon--link:hover{
     color: rgb(30,215,96);
 }
-
+.bottom-footer{
+    margin: auto;
+    
+}
 .bottom-footer__list{
-    margin-left: 43px;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
-.bottom-footer__item--link{
-    text-decoration: none;
-    margin: 10px;
+.bottom-footer__item{
+    width: auto;
+}
+.bottom-footer__item--link, .bottom-footer__item--span{
+    margin: 6px;
     color: rgb(145,148,150);
     font-size: 12px;
+    white-space: nowrap;
 }
 
+@media (max-width: 769px){
+    .navbar-expand-ipad{
+        display: -ms-flexbox!important;
+        display: flex!important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+}
+@media (min-width: 769px){
+    .nav-link{
+        text-align: center;
+    }
+    .nav-item{
+        padding: 8px 0px 8px 0px;
+    }
+    .navbar-collapse{
+        flex-grow: unset;
+        width: 520px;
+    }
+
+    .thebody__bigcontent, .thebody__pcontent {
+        text-align: left;
+    }
+    .thebody__bigcontent{
+        width: 512px;
+        font-size: 64px;
+    }
+    .thebody__downloadcontent{
+        margin: unset;
+    }
+    .footer-top{
+        padding-top: 100px;
+        width: 1150px!important;
+    }
+
+    .header__logo--svg{
+        width: 130px;
+    }
+
+
+
+}
+.container-fluid{
+    padding: 0;
+}
+.navbar{
+    width: 100%;
+}
+.bg-dark{
+    background-color: black!important;
+}
+.navbar-container{
+    width: 1149px;
+}
+.nav-item{
+    font-weight: 500;
+    padding: 8px 0px 8px 0px;
+}
+.nav-link{
+    color: white!important;
+    display: block;
+    width: 100%;
+    padding: 0 18px;
+    
+}
+.nav-link:hover{
+    color: var(--theme-color)!important;
+}
+
+.bottom-footer__item--right{
+    text-align: right;
+}
+.item--copyr{
+    padding: 0!important;
+}
+.bottom-footer{
+    padding:0!important;
+}
