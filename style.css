@@ -75,6 +75,7 @@ span{
 
 /* Body content */
 .thebody{
+    background-image: url("https://www-growth.scdn.co/static/home/bursts-mobile.svg");
     margin-top: 100px;
     display: flex;
     flex-direction: column;
